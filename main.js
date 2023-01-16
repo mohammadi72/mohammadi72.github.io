@@ -1,10 +1,3 @@
-// let searchBox = document.querySelector(".search-box");
-// let input = document.querySelector("#search");
-// searchBox.addEventListener("click", (e) => {
-//   input.style.border = "1px solid black";
-//   input.style.width = "400px";
-// });
-// **************************************************************************************
 // navBar
 window.onscroll = function () {
   scroll();
