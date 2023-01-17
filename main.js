@@ -14,6 +14,7 @@ function scroll() {
   }
 }
 // **************************************************************************************
+//interest section
 function showElement(evt, element) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -35,3 +36,27 @@ function showElement(evt, element) {
   document.getElementById(element).style.justifyContent = "space-between";
   evt.currentTarget.className += " active";
 }
+// **************************************************************************************
+//show modal when clicked profile icon in navbar
+// Get all elements
+const clickedIcon = document.querySelector("#pro-icon");
+const modalMe = document.querySelector(".info-me");
+const closeModal = document.querySelector(".backdrop");
+clickedIcon.addEventListener("click", () => {
+  modalMe.style.display = "block";
+});
+closeModal.addEventListener("click", () => {
+  modalMe.style.display = "none";
+});
+// **************************************************************************************
+//show modal when clicked work icon in navbar
+// Get all elements
+const workIcon = document.querySelector("#work-icon");
+const modalWork = document.querySelector(".form-work");
+// close modal variable is declared
+workIcon.addEventListener("click", () => {
+  modalWork.style.display = "block";
+});
+closeModal.addEventListener("click", () => {
+  modalWork.style.display = "none";
+});
