@@ -44,6 +44,7 @@ const modalMe = document.querySelector(".info-me");
 const closeModal = document.querySelector(".backdrop");
 clickedIcon.addEventListener("click", () => {
   modalMe.style.display = "block";
+  modalWork.style.display = "none";
 });
 closeModal.addEventListener("click", () => {
   modalMe.style.display = "none";
@@ -56,6 +57,7 @@ const modalWork = document.querySelector(".form-work");
 // close modal variable is declared
 workIcon.addEventListener("click", () => {
   modalWork.style.display = "block";
+  modalMe.style.display = "none";
 });
 closeModal.addEventListener("click", () => {
   modalWork.style.display = "none";
